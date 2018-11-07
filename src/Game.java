@@ -58,41 +58,10 @@ public class Game {
                     //Lægger de 2 terning værdier sammen og henter dem fra vores Terning klasse
                     int sum = dice1.getFace() + dice2.getFace();
 
-                    //Metoden for hvis en af spillerne slår 2 1'ere og de taber deres score
-                    if (dice1.getFace() == 1 && dice1.getFace() == dice2.getFace() && Gameturn == true) {
-                        System.out.println(p1.getName() + " slog et par " + dice1.getFace() + "'ere & har nu tabt sin score men får en ny tur");
-                        p1.resetPoint();
+                    if(Gameturn==true){
 
-                    } else if (dice1.getFace() == 1 && dice1.getFace() == dice2.getFace() && Gameturn == false) {
-                        System.out.println(p2.getName() + " slog et par " + dice1.getFace() + "'ere & har nu tabt sin score men får en ny tur");
-                        p2.resetPoint();
+                    } else if(Gameturn==false){
 
-                    } else {
-
-                        //tilføjer de nye ternings point til spiller 1's score
-                        if (Gameturn == true && dice1.getFace() != dice2.getFace()) {
-                            System.out.println(p1.getName() + " slog en " + dice1.getFace() + "'er" + " & en " + dice2.getFace() + "'er og får den samlede sum " + sum);
-                            p1.addPoint(sum);
-                            Gameturn = false;
-
-                            //Medtoden for hvis spiller 1 slår et par og giver ham en ekstra tur.
-                        } else if (Gameturn == true && dice1.getFace() == dice2.getFace()) {
-                            System.out.println(p1.getName() + " slog et par " + dice1.getFace() + "'ere & får den samlede sum " + sum + " og får en ny tur");
-                            p1.addPoint(sum);
-                            Gameturn = true;
-
-                            //Tilføjer de nye ternings point til spiller 2's score
-                        } else if (Gameturn == false && dice1.getFace() != dice2.getFace()) {
-                            System.out.println(p2.getName() + " slog en " + dice1.getFace() + "'er" + " & en " + dice2.getFace() + "'er og får den samlede sum " + sum + " og får en ny tur");
-                            p2.addPoint(sum);
-                            Gameturn = true;
-
-                            //Medtoden for hvis spiller 2 slår et par og giver ham en ekstra tur
-                        } else if (Gameturn == false && dice1.getFace() == dice2.getFace()) {
-                            System.out.println(p2.getName() + " slog et par " + dice1.getFace() + "'ere & får en samlede sum " + sum);
-                            p2.addPoint(sum);
-                            Gameturn = false;
-                        }
                     }
 
                 //Fortæller stilling mellem de 2 spillere.
