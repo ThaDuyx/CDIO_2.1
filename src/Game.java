@@ -81,3 +81,6 @@ public class Game {
     }
     }
 }
+
+//Programmet er lavet af gruppe 24 til CDIO-2 projektet.
+//Gruppen består af: Christoffer Adrian Detlef (s185117), Simon Andersen(s185083), Asama Hayder(s185099), Thaer Mhd Refaat(s170727) & Jakup Viljam Dam(s185095)
