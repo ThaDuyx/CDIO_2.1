@@ -289,43 +289,43 @@ public class Game {
                                 break;
 
                             case 3:
-                                System.out.println(p1.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p1.getName() + " er landet på feltet Crater og mister desværre 100 point.");
+                                System.out.println(p1.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p1.getName() + " er landet på feltet Crater og mister 100 point.");
                                 p1.addPoint(-100);
                                 Gameturn = false;
                                 break;
 
                             case 4:
-                                System.out.println(p1.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p1.getName() + " er landet på feltet Palace Gates og får 100 point.");
+                                System.out.println(p1.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p1.getName() + " er landet på feltet Palace Gates og som giver 100 point.");
                                 p1.addPoint(100);
                                 Gameturn = false;
                                 break;
 
                             case 5:
-                                System.out.println(p1.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p1.getName() + " er landet på feltet Cold Dessert og pga. kulden mister sølle 20 point.");
+                                System.out.println(p1.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p1.getName() + " er landet på feltet Cold Dessert og mister 20 point.");
                                 p1.addPoint(-20);
                                 Gameturn = false;
                                 break;
 
                             case 6:
-                                System.out.println(p1.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p1.getName() + " er landet på feltet Walled City og får 180 point.");
+                                System.out.println(p1.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p1.getName() + " er landet på feltet Walled City som giver 180 point.");
                                 p1.addPoint(180);
                                 Gameturn = false;
                                 break;
 
                             case 7:
-                                System.out.println(p1.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p1.getName() + " er landet på feltet Monastery og trods en god en indsats får ingen point.");
+                                System.out.println(p1.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p1.getName() + " er landet på feltet Monastery og mister eller får ingen point.");
                                 p1.addPoint(0);
                                 Gameturn = false;
                                 break;
 
                             case 8:
-                                System.out.println(p1.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p1.getName() + " er landet på feltet Black Cover og mister desværre 70 point.");
+                                System.out.println(p1.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p1.getName() + " er landet på feltet Black Cover og mister 70 point.");
                                 p1.addPoint(-70);
                                 Gameturn = false;
                                 break;
 
                             case 9:
-                                System.out.println(p1.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p1.getName() + " Er landet på feltet Huts in the Mountain og får 60 point.");
+                                System.out.println(p1.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p1.getName() + " Er landet på feltet Huts in the Mountain som giver 60 point.");
                                 p1.addPoint(60);
                                 Gameturn = false;
                                 break;
@@ -337,7 +337,7 @@ public class Game {
                                 break;
 
                             case 11:
-                                System.out.println(p1.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p1.getName() + " Er landet på feltet The Pit og mister  50 point.");
+                                System.out.println(p1.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p1.getName() + " Er landet på feltet The Pit og mister 50 point.");
                                 p1.addPoint(-50);
                                 Gameturn = false;
                                 break;
@@ -361,43 +361,43 @@ public class Game {
                                 break;
 
                             case 3:
-                                System.out.println(p2.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p2.getName() + " er landet på feltet Crater og mister desværre 100 point.");
+                                System.out.println(p2.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p2.getName() + " er landet på feltet Crater og mister 100 point.");
                                 p2.addPoint(-100);
                                 Gameturn = true;
                                 break;
 
                             case 4:
-                                System.out.println(p2.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p2.getName() + " er landet på feltet Palace Gates og får 100 point.");
+                                System.out.println(p2.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p2.getName() + " er landet på feltet Palace Gates som giver 100 point.");
                                 p2.addPoint(100);
                                 Gameturn = true;
                                 break;
 
                             case 5:
-                                System.out.println(p2.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p2.getName() + " er landet på feltet Cold Dessert og pga. kulden mister sølle 20 point.");
+                                System.out.println(p2.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p2.getName() + " er landet på feltet Cold Dessert og mister 20 point.");
                                 p2.addPoint(-20);
                                 Gameturn = true;
                                 break;
 
                             case 6:
-                                System.out.println(p2.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p2.getName() + " er landet på feltet Walled City og får 180 point.");
+                                System.out.println(p2.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p2.getName() + " er landet på feltet Walled City som giver 180 point.");
                                 p2.addPoint(180);
                                 Gameturn = true;
                                 break;
 
                             case 7:
-                                System.out.println(p2.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p2.getName() + " er landet på feltet Monastery og trods en god en indsats får ingen point.");
+                                System.out.println(p2.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p2.getName() + " er landet på feltet Monastery og mister eller får ingen point.");
                                 p2.addPoint(0);
                                 Gameturn = true;
                                 break;
 
                             case 8:
-                                System.out.println(p2.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p2.getName() + " er landet på feltet Black Cover og mister desværre 70 point.");
+                                System.out.println(p2.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p2.getName() + " er landet på feltet Black Cover og mister 70 point.");
                                 p2.addPoint(-70);
                                 Gameturn = true;
                                 break;
 
                             case 9:
-                                System.out.println(p2.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p2.getName() + " Er landet på feltet Huts in the Mountain og får 60 point.");
+                                System.out.println(p2.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p2.getName() + " Er landet på feltet Huts in the Mountain som giver 60 point.");
                                 p2.addPoint(60);
                                 Gameturn = true;
                                 break;
@@ -409,7 +409,7 @@ public class Game {
                                 break;
 
                             case 11:
-                                System.out.println(p2.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p2.getName() + " Er landet på feltet The Pit og mister  50 point.");
+                                System.out.println(p2.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p2.getName() + " Er landet på feltet The Pit og mister 50 point.");
                                 p2.addPoint(-50);
                                 Gameturn = true;
                                 break;
