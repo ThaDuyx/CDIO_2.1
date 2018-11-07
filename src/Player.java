@@ -27,8 +27,4 @@ public class Player {
         this.point = this.point + totalpoint;
     }
 
-    public int resetPoint() {
-        this.point = 0;
-        return this.point;
     }
-}
