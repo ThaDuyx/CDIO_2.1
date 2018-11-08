@@ -245,9 +245,7 @@ public class Game {
                 System.out.println(p2.getName() + messages.getString("vundet"));
             }
         }
-
     }
-}
 
 
 //Programmet er lavet af gruppe 24 til CDIO-2 projektet.
