@@ -10,21 +10,23 @@ public class Game {
         System.out.println("Welcome - Velkommen");
         System.out.println("Press 1 for english, Tryk 2 for dansk");
         //opsætning af sprogkode starter her
-        int language = use.nextInt();
+        char language = use.next().charAt(0);
+
 
         Locale dkLocale = new Locale("da","DK");
         Locale enLocale = new Locale("en","US");
 
         ResourceBundle messages = ResourceBundle.getBundle("MessagesBundle", enLocale);
 
-        while (language != 1 && language != 2) {
+        while (language != '1' && language != '2') {
             System.out.println("prøv igen/try again");
-            language = use.nextInt();
+            language = use.next().charAt(0);
+
         }
 
-        if (language == 1) {
+        if (language == '1') {
             messages = ResourceBundle.getBundle("MessagesBundle", enLocale);
-        } else if (language == 2) {
+        } else if (language == '2') {
             messages = ResourceBundle.getBundle("MessagesBundle", dkLocale);
         }
 
