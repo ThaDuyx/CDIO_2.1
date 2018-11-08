@@ -18,7 +18,7 @@ public class Game {
         ResourceBundle messages = ResourceBundle.getBundle("MessagesBundle", enLocale);
 
         while (language != '1' && language != '2') {
-            System.out.println("prøv igen/try again");
+            System.out.println("Prøv igen/Try again");
             language = use.next().charAt(0);
         }
 
@@ -29,13 +29,17 @@ public class Game {
         }
 
         System.out.println(messages.getString("terning1"));
-            int chooseDice = use.nextInt();
+            char chooseDice = use.next().charAt(0);
 
-            if (chooseDice == 1) {
-                System.out.println(messages.getString("terning2"));
-            } else if (chooseDice == 2) {
-                System.out.println(messages.getString("terning3"));
+            while(chooseDice != '1' && chooseDice != '2') {
+                System.out.println("Prøv igen/Try again");
+                chooseDice = use.next().charAt(0);
             }
+        if (chooseDice == 1) {
+            System.out.println(messages.getString("terning2"));
+        } else if (chooseDice == 2) {
+            System.out.println(messages.getString("terning3"));
+        }
 
         boolean Gameturn = true;
         int finalpoint = 3000;
