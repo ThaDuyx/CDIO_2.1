@@ -230,9 +230,9 @@ public class Game {
             int chooseDice = use.nextInt();
 
             if (chooseDice == 1) {
-                System.out.println("You chose the 6-sided dice");
+                System.out.println("I valgte den 6-sidet terning");
             } else if (chooseDice == 2) {
-                System.out.println("You chose the 4-sided dice");
+                System.out.println("I valgte den 4 sidet terning");
             }
 
             boolean Gameturn = true;
