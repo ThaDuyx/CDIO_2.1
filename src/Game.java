@@ -33,10 +33,6 @@ public class Game {
                 break;
             }
 
-        if (language == 1) {
-            messages = ResourceBundle.getBundle("MessagesBundle", enLocale);
-        } else if (language == 2) {
-            messages = ResourceBundle.getBundle("MessagesBundle", dkLocale);
         }
         if (language == 1) {
             messages = ResourceBundle.getBundle("MessagesBundle", enLocale);
