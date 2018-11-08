@@ -75,9 +75,14 @@ public class Game {
 
             //Siger hvis den indtastede værdi var kast skal den køre de 2 terning objekter og beregne matematikken for at simulere en terning
             if (request.equalsIgnoreCase("play")) {
-                dice1.roll();
-                dice2.roll();
-
+                if (chooseDice == 1) {
+                    dice1.roll();
+                    dice2.roll();
+                } else if (chooseDice == 2) {
+                    dice1.roll2();
+                    dice2.roll2();
+                }
+            }
 
                 //Lægger de 2 terning værdier sammen og henter dem fra vores Terning klasse
                 int sum = dice1.getFace() + dice2.getFace();
@@ -230,7 +235,6 @@ public class Game {
                 //Fortæller stilling mellem de 2 spillere.
                 System.out.println(messages.getString("detstårnu1") + p1.getPoint() + messages.getString("detstårnu2") + p1.getName() + messages.getString("og") + p2.getPoint() + messages.getString("detstårnu2") + p2.getName());
             }
-        }
         //Fortæller hvis en af spillerne har fået over 'finalpoint' vinder spilleren og spillet slutter
         if (p1.getPoint() >= finalpoint) {
 
@@ -240,8 +244,9 @@ public class Game {
 
             System.out.println(p2.getName() + messages.getString("vundet"));
         }
+        }
+
     }
-}
 
 
 
