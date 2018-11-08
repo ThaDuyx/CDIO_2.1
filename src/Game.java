@@ -28,12 +28,13 @@ public class Game {
             messages = ResourceBundle.getBundle("MessagesBundle", dkLocale);
         }
 
+        System.out.println(messages.getString("terning1"));
             int chooseDice = use.nextInt();
 
             if (chooseDice == 1) {
-                System.out.println("I valgte den 6-sidet terning");
+                System.out.println(messages.getString("terning2"));
             } else if (chooseDice == 2) {
-                System.out.println("I valgte den 4 sidet terning");
+                System.out.println(messages.getString("terning3"));
             }
 
         boolean Gameturn = true;
