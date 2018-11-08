@@ -12,8 +12,8 @@ public class Game {
         //opsætning af sprogkode starter her
         char language = use.next().charAt(0);
 
-        Locale dkLocale = new Locale("da","DK");
-        Locale enLocale = new Locale("en","US");
+        Locale dkLocale = new Locale("da", "DK");
+        Locale enLocale = new Locale("en", "US");
 
         ResourceBundle messages = ResourceBundle.getBundle("MessagesBundle", enLocale);
 
@@ -151,7 +151,7 @@ public class Game {
                             break;
 
                         case 12:
-                            System.out.println(p1.getName() + messages.getString("slogen") + dice1.getFace() + messages.getString("resultat1") + dice2.getFace() + messages.getString("resultat2") + sum + messages.getString("punktum") + p1.getName() +  messages.getString("feltJackpot1") + p1.getName() + messages.getString("feltJackpot2"));
+                            System.out.println(p1.getName() + messages.getString("slogen") + dice1.getFace() + messages.getString("resultat1") + dice2.getFace() + messages.getString("resultat2") + sum + messages.getString("punktum") + p1.getName() + messages.getString("feltJackpot1") + p1.getName() + messages.getString("feltJackpot2"));
                             p1.addPoint(650);
                             Gameturn = false;
                             break;
@@ -235,19 +235,19 @@ public class Game {
                 //Fortæller stilling mellem de 2 spillere.
                 System.out.println(messages.getString("detstårnu1") + p1.getPoint() + messages.getString("detstårnu2") + p1.getName() + messages.getString("og") + p2.getPoint() + messages.getString("detstårnu2") + p2.getName());
             }
-        //Fortæller hvis en af spillerne har fået over 'finalpoint' vinder spilleren og spillet slutter
-        if (p1.getPoint() >= finalpoint) {
+            //Fortæller hvis en af spillerne har fået over 'finalpoint' vinder spilleren og spillet slutter
+            if (p1.getPoint() >= finalpoint) {
 
-            System.out.println(p1.getName() + messages.getString("vundet"));
+                System.out.println(p1.getName() + messages.getString("vundet"));
 
-        } else if (p2.getPoint() >= finalpoint) {
+            } else if (p2.getPoint() >= finalpoint) {
 
-            System.out.println(p2.getName() + messages.getString("vundet"));
-        }
+                System.out.println(p2.getName() + messages.getString("vundet"));
+            }
         }
 
     }
-
+}
 
 
 //Programmet er lavet af gruppe 24 til CDIO-2 projektet.
